@@ -18,7 +18,11 @@ class String
     a = self.split(".").length
     counter = 1
     a.each do |sentence|
-      if sentence.include("?") || sentence.include("!") || sentence.include(".")
+      if sentence.include("?") 
+        counter += 1
+      elsif sentence.include("!") 
+        counter += 1  
+      elsif sentence.include(".")
         counter += 1
     end
     counter
